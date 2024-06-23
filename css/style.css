@@ -2059,3 +2059,68 @@ tbody td img {
 }
 
 /* Add Transport End */
+
+/* Add Banner */
+
+.banner-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.banner-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.banner-table td input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  padding: 8px 20px 8px 20px;
+  border: 1px solid #ddd;
+}
+
+.banner-table td input{
+  background-color: #FFFFFF;
+}
+
+.score {
+  font-family: Arial, sans-serif;
+  margin-left: 460px;
+}
+
+.add-new-btn {
+  background-color: #742cdf;
+  color: #fff;
+  border-radius: 0;
+  width: 50px;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.add-new-btn:hover {
+  background-color: #742cdf;
+  color: #fff;
+  border-radius: 0;
+}
+
+/* Add Banner End */
+
+
+/* Add Double Banner */
+
+.team-score{
+
+  font-family: Arial, sans-serif;
+  margin-left: 1050px !important;
+  margin-bottom: 5px;
+}
+
+.double-table{
+  margin-top: -50px !important;
+}
+
+/* Add Double Banner End*/
