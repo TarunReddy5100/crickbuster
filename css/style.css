@@ -1346,6 +1346,28 @@ label {
 /* Description Boxes End */
 
 /* Management Content Page Start */
+
+.add-question-modal{
+  background-color: #000000a6;
+  height: 100%;
+  padding: 200px 0;
+}
+.model-heading{
+  font-weight: 700 !important;
+  color: #742CDF;
+}
+.add-question-modal-content{
+  background-color: #ffffff;
+  width: 45%;
+  padding: 30px 0;
+  margin: 1px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-question-modal-content textarea{
+  height: 110px;
+}
 /* intercity */
 
 .cric-heading {
