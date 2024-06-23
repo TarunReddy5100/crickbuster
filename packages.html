@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrickBuster </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+                <h2>CRICKBUSTER</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html"><i class="fa-brands fa-slack"></i>Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="packages.html"><i class="fa-solid fa-bag-shopping"></i>Packages</a>
+                </li>
+                <li>
+                    <a href="tournaments.html"><i class="fa-solid fa-trophy"></i>Tournaments</a>
+                </li>
+                <li>
+                    <a href="stadium.html"><i class="fa fa-user"></i>Stadiums</a>
+                </li>
+                <li>
+                    <a href="teams.html"><i class="fa fa-user"></i>Teams</a>
+                </li>
+                <li>
+                    <a href="hotels.html"><i class="fa-solid fa-hotel"></i>Hotels</a>
+                </li>
+                <li>
+                    <a href="flights.html"><i class="fa-solid fa-plane-departure"></i>Flights</a>
+                </li>
+                <li>
+                    <a href="attractions.html"><i class="fa fa-user"></i>Attractions</a>
+                </li>
+                <li>
+                    <a href="intercity.html"><i class="fa-solid fa-bus"></i>Intra/Intercity</a>
+                </li>
+                <li>
+                    <a href="cricbuster-tour.html"><i class="fa fa-user"></i>Crickbuster Tours</a>
+                </li>
+                <li>
+                    <a href="landing-page.html"><i class="fa-solid fa-pager"></i>Landing Page</a>
+                </li>
+                <li>
+                    <a href="manage-content.html"><i class="fa-solid fa-gears"></i>Manage Content</a>
+                </li>
+                <!-- <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fa fa-home"></i>
+                        Media
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">All</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Recent</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Images</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Video</a>
+                    </div>
+                </div> -->
+                <!-- <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fa fa-home"></i>
+                        Media
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">All</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Recent</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Images</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Video</a>
+                    </div>
+                </div> -->
+            </ul>
+        </aside>
+
+        <div id="navbar-wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid  ">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand mx-3" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="py-2">
+                        <span class="mt-5">
+                            <button type="button" class=" position-relative   border border-0 bg-none  "
+                                style="background-color: transparent;">
+                                <span class="fs-4 notification-icon" style="color:#742CDF ;background-color: none;"> <i
+                                        class="fa-solid fa-bell"></i></span>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">0
+                                    <span class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <img src="images/profile1.jpg" class="  border border-secondary profile-image mx-5"
+                                alt="profile">
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Start Content -->
+        <section id="content-wrapper">
+            
+                <div class="row ">
+                    <h3 class="my-0">Packages</h3>
+                    <div class="d-flex justify-content-between ">
+                        <div class="pagename-text">Manage packages settings.</div>
+                    </div>
+                </div>
+                <div class="row pt-4 px-1">
+                    <div class="col-lg-6">
+                        <button class="btn hotel-tab-inactive hotel-tab-active"
+                            onclick="openhotel(event,'apihotels')">Tournament
+                            Level</button>
+                        <button class="btn hotel-tab-inactive" onclick="openhotel(event,'offlinehotels')">Match
+                            Level</button>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <input type="search" class="input-search px-1 mx-1 rounded" placeholder="Search"
+                            id="packages-search" />
+                        <a href="add-package.html" class="btn  add-new-button">
+                            <span class=""><i class="fa-solid fa-plus"></i></span> Add New Package
+                        </a>
+                    </div>
+                </div>
+                <div class="team-table-container">
+                    <div class="team-table-body hoteltab" id="apihotels" style="display:block">
+                        <table class="tournament-level-table table-hover">
+                            <thead class="table-header-section">
+                                <tr class="table-header">
+                                    <th>S.No</th>
+                                    <th>Title</th>
+                                    <th>Date & Time</th>
+                                    <th>Spots booked</th>
+                                    <th>Spots left</th>
+                                    <th>Publish</th>
+                                    <th>Enable booking</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-data-elements">
+                                    <td>1</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class="py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+                                    <td>2</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>3</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>4</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>5</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class="py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>6</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>7</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>8</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>9</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>10</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>11</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>12</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+
+                                <tr class="table-data-elements">
+
+                                    <td>13</td>
+                                    <td>
+                                        <div>IPL-2022 First 4 </div>
+                                        <div>Match Package</div>
+                                    </td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Repeat rows to ensure scrollbar appears -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="team-table-body hoteltab" id="offlinehotels" style="display: none;">
+                        <table class="tournament-level-table table-hover">
+                            <thead class="table-header-section">
+                                <tr class="table-header">
+                                    <th>S.No</th>
+                                    <th>Title</th>
+                                    <th>Date & Time</th>
+                                    <th>Spots booked</th>
+                                    <th>Spots left</th>
+                                    <th>Publish</th>
+                                    <th>Enable booking</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-data-elements">
+                                    <td>1</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class="py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>2</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>3</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>4</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>5</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class="py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>6</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>7</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>8</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>9</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>10</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>12</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+                                <tr class="table-data-elements">
+
+                                    <td>13</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+
+                                <tr class="table-data-elements">
+
+                                    <td>14</td>
+                                    <td>T20</td>
+                                    <td>
+                                        <div>26-08-2022 </div>
+                                        <div>11:00 AM</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>21</td>
+                                    <td class="text-center">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </td>
+                                    <td>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+
+                                    </td>
+                                    <td class=" py-4 ">
+                                        <a href="" class="text-dark fs-6 mx-2"><i class="fa-solid fa-file"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a href="" class="text-dark mx-2"><i class="fa-solid fa-trash"></i></a>
+
+                                    </td>
+                                </tr>
+
+                                <!-- Repeat rows to ensure scrollbar appears -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+           
+
+        </section>
+        <!-- End Content -->
+    </div>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

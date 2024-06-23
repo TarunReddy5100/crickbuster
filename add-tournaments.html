@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrickBuster: Add Tournaments </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+                <h2>CRICKBUSTER</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html"><i class="fa-brands fa-slack"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="packages.html"><i class="fa-solid fa-bag-shopping"></i>Packages</a>
+                </li>
+                <li class="active">
+                    <a href="tournaments.html"><i class="fa-solid fa-trophy"></i>Tournaments</a>
+                </li>
+                <li>
+                    <a href="stadium.html"><i class="fa fa-user"></i>Stadiums</a>
+                </li>
+                <li>
+                    <a href="teams.html"><i class="fa fa-user"></i>Teams</a>
+                </li>
+                <li>
+                    <a href="hotels.html"><i class="fa-solid fa-hotel"></i>Hotels</a>
+                </li>
+                <li>
+                    <a href="flights.html"><i class="fa-solid fa-plane-departure"></i>Flights</a>
+                </li>
+                <li>
+                    <a href="attractions.html"><i class="fa fa-user"></i>Attractions</a>
+                </li>
+                <li>
+                    <a href="intercity.html"><i class="fa-solid fa-bus"></i>Intra/Intercity</a>
+                </li>
+                <li>
+                    <a href="cricbuster-tour.html"><i class="fa fa-user"></i>Crickbuster Tours</a>
+                </li>
+                <li>
+                    <a href="landing-page.html"><i class="fa-solid fa-pager"></i>Landing Page</a>
+                </li>
+                <li>
+                    <a href="manage-content.html"><i class="fa-solid fa-gears"></i>Manage Content</a>
+                </li>
+                <!-- <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fa fa-home"></i>
+                        Media
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">All</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Recent</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Images</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Video</a>
+                    </div>
+                </div> -->
+                <!-- <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fa fa-home"></i>
+                        Media
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">All</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Recent</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Images</a>
+                        <a href="#" class="dashboard-nav-dropdown-item">Video</a>
+                    </div>
+                </div> -->
+            </ul>
+        </aside>
+
+        <div id="navbar-wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid  ">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand mx-3" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+                        <a href="hotels.html" class="back-button"><i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                    <div class="py-2">
+                        <span class="mt-5">
+                            <button type="button" class=" position-relative   border border-0 bg-none  "
+                                style="background-color: transparent;">
+                                <span class="fs-4 notification-icon" style="color:#742CDF ;background-color: none;"> <i
+                                        class="fa-solid fa-bell"></i></span>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">0
+                                    <span class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <img src="images/profile1.jpg" class="  border border-secondary profile-image mx-5"
+                                alt="profile">
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Start Content -->
+        <section id="content-wrapper">
+            <div class="page-heading">
+                <div class="ms-2">
+                    <h2>Tournaments</h2>
+                    <p>Manage tournament details</p>
+                </div>
+            </div>
+            <div class="content-container">
+                <p class="content-heading">Add Tournament</p>
+                <div class="content-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row align-items-center mb-4">
+                                    <label for="hotel-name" class="banner-label">Tournament name</label>
+                                    <input type="text" class="add-input" id="hotel-name" name="hotel-name"
+                                        placeholder="IPL">
+                                </div>
+                                <div class="row align-items-center mb-4 ">
+                                    <label for="hotel-name" class="banner-label">Number of matches</label>
+                                    <input type="number" class="" id="hotel-name" name="hotel-name" placeholder="74"
+                                        style="width: 70px;font-size: 15px;border: 1px solid #ddd; padding: 9px;">
+                                    <div class="d-flex justify-content-center px-5 mb-5"><a href="#">View/Add
+                                            Matches</a></div>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="description" class="banner-label">Description</label>
+                                    <textarea id="description" name="description" placeholder="Near Airport"
+                                        class="add-input"></textarea>
+                                </div>
+
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">Country</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">India</option>
+                                        <option value="india">USA</option>
+                                        <option value="india">UK</option>
+                                        <option value="india">Kenada</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">India <i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">USA <i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">UK <i
+                                                class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">City</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">Banglore</option>
+                                        <option value="india">Pune</option>
+                                        <option value="india">Chennai</option>
+                                        <option value="india">Kochi</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">Kochi <i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Chennai <i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Kochi<i
+                                                class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+
+                                <div class="row align-items-center mb-4">
+                                    <label for="hotel-email" class="banner-label">Results</label>
+                                    <input type="email" class="add-input" id="hotel-email" name="hotel-email"
+                                        placeholder="Gujarath Titan won by 7 wickets!">
+                                </div>
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">Teams</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">Teams</option>
+                                        <option value="india">Chennai Super Kings</option>
+                                        <option value="india">Delhi Capitals</option>
+                                        <option value="india">Mumbai Indians</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">Chennai Super
+                                            Kings <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Delhi Capitals
+                                            <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Mumbai
+                                            Indians<i class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">Hotels</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">Hotel</option>
+                                        <option value="india">Tej Koramandal</option>
+                                        <option value="india">Taj connemara</option>
+                                        <option value="india">ITC Grand Chola</option>
+                                        <option value="india">Hillton Chennai</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">Tej Koramandal<i
+                                                class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Taj connemara
+                                            <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">ITC Grand
+                                            Chola<i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Hillton
+                                            Chennai<i class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">Stadium</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">Teams</option>
+                                        <option value="india">Chennai Super Kings</option>
+                                        <option value="india">Delhi Capitals</option>
+                                        <option value="india">Mumbai Indians</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">Chennai Super
+                                            Kings <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Delhi Capitals
+                                            <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Mumbai
+                                            Indians<i class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">Flights</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">Teams</option>
+                                        <option value="india">Chennai Super Kings</option>
+                                        <option value="india">Delhi Capitals</option>
+                                        <option value="india">Mumbai Indians</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">Chennai Super
+                                            Kings <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Delhi Capitals
+                                            <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Mumbai
+                                            Indians<i class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+                                <div class="row  mb-4">
+                                    <label for="hotel-country" class="banner-label">Attractions</label>
+                                    <select name="hotel-country" id="hotel-country" class="add-input">
+                                        <option value="india">Teams</option>
+                                        <option value="india">Chennai Super Kings</option>
+                                        <option value="india">Delhi Capitals</option>
+                                        <option value="india">Mumbai Indians</option>
+
+                                    </select>
+                                    <label for="hotel-country" class="banner-label"></label>
+                                    <span class=" py-1 mx-2 add-input border-0">
+                                        <button type="button" class="d-inline  dropdown-buttons mb-1">Chennai Super
+                                            Kings <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Delhi Capitals
+                                            <i class="fa-solid fa-xmark"></i></button>
+                                        <button type="button" class="d-inline mx-1 dropdown-buttons mb-1">Mumbai
+                                            Indians<i class="fa-solid fa-xmark"></i></button>
+                                    </span>
+
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="description" class="banner-label">mandatory services</label>
+                                    <div class="add-input border-0">
+                                        <span class="fs-4 mx-2 mandatory-services-icons "><i
+                                                class="fa-solid fa-hotel"></i></span>
+                                        <span class="fs-4 mx-2 mandatory-services-icons"><i
+                                                class="fa-solid fa-plane-departure"></i></span>
+                                        <span class="fs-4 mx-2 mandatory-services-icons"><i
+                                                class="fa-solid fa-bus"></i></span>
+                                        <span class="fs-4 mx-2 mandatory-services-icons"><i
+                                                class="fa-solid fa-tree"></i></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row align-items-center mb-4">
+                                    <label for="hotel-zip" class="add-label">Start date</label>
+                                    <input type="text" class="add-input" id="hotel-zip" name="hotel-zip"
+                                        placeholder="20-02-2022">
+                                </div>
+
+                                <div class="row align-items-center mb-4 ">
+                                    <label for="hotel-zip" class="add-label">End date</label>
+                                    <input type="text" class="add-input" id="hotel-zip" name="hotel-zip"
+                                        placeholder="10-04-2023">
+                                </div>
+                                <div class="row align-items-center mb-4 mt-2">
+                                    <label for="team-logo" class="add-label">Team Logo</label>
+                                    <div class="p-0" style="width: 300px;">
+                                        <div class="teams-file-upload">
+                                            <label for="team-logo" class="teams-file-upload-input">Team Logo</label>
+                                            <input type="file" id="team-logo" name="team-logo"
+                                                class="teams-file-upload-input">
+                                            <span class="teams-file-icon"><i
+                                                    class="fa-solid fa-arrow-up-from-bracket"></i></span>
+                                        </div>
+                                        <div class="teams-file-info">CSK.jpeg (500Kb) <span
+                                                class="remove-file">&#x2716;</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div style="float: right;">
+                    <a href="#" class="btn cancel-btn">CANCEL</a>
+                    <a href="#" class="btn save-btn">SAVE</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Content -->
+    </div>
+
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
