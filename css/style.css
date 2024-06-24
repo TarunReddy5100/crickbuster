@@ -54,7 +54,7 @@ p {
 }
 td {
   font-size: 14px !important;
-  font-weight: 450 !important;
+  font-weight: 500 !important;
 }
 
 /* Login Forms Style */
@@ -475,6 +475,7 @@ td {
   font-weight: 800px !important;
   color: white !important;
   background-color: #742cdf !important;
+  border-radius: 0px !important;
 }
 .inquiry-profiles {
   width: 30px;
@@ -486,7 +487,7 @@ td {
 /* Start  Packages-On-Live*/
 
 .Packages-On-Live {
-  height: 85% !important;
+  height: 80% !important;
   /* overflow: hidden !important; */
 }
 .Packages-On-Live-progreesses {
@@ -521,7 +522,7 @@ td {
 
 /* Start Sales-statistics-card */
 .sales-statistics-card {
-  height: 85% !important;
+  height: 80% !important;
 }
 .sales-statistics-body {
   /* height: 50% !important; */
@@ -532,13 +533,13 @@ td {
 
 /* Start Dashboard Order-cards */
 .dashboard-Order-Cards {
-  height: 65% !important;
+  height: 85% !important;
 }
 /* End Dashboard Order-cards */
 
 /* Start inquiry-card */
 .inquiry {
-  height: 65% !important;
+  height: 85% !important;
   /* overflow: hidden !important; */
 }
 .inquiry-card {
@@ -583,6 +584,7 @@ td {
   width: 170px !important;
   padding: 3px !important;
   font-size: 14px;
+  border-radius: 0px !important;
 }
 /* Start Trournament table */
 /* To display the block as level element */
@@ -631,6 +633,7 @@ table.table-data-scrollbar .tournament-table-body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+ 
 }
 /* Hide the browser's default checkbox */
 .checkbox-container input {
@@ -649,6 +652,7 @@ table.table-data-scrollbar .tournament-table-body {
   height: 20px;
   width: 20px;
   background-color: #eee;
+  border: 1px solid #000000b7;
 }
 
 /* On mouse-over, add a grey background color */
@@ -989,6 +993,7 @@ thead th {
   color: #b3b8bd;
   margin: -2px;
   font-size: 14px;
+  border-radius: 0px !important;
 
   /* width: 150px; */
 }
@@ -1002,8 +1007,8 @@ thead th {
   font-weight: 500;
 }
 .court-yard-text {
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 15px !important;
+  font-weight: 700 !important;
 }
 
 .hotel-rating-column {
@@ -1361,13 +1366,6 @@ label {
   border-bottom: 1px solid #ddd;
   padding: 0px 30px;
 }
-
-table {
-  /* width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 40px; */
-}
-
 .cric-body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -2012,6 +2010,7 @@ tbody td img {
 .table-data-elements td {
   padding: 8px 12px;
   text-align: left;
+  font-weight: 500 !important;
 }
 .table-header th {
   /* border-bottom: 1px solid #242323; */
@@ -2020,13 +2019,13 @@ tbody td img {
   top: 0;
   height: 55px;
   z-index: 1;
-  font-weight: 650;
+  font-weight: 650 !important;
   /* padding: 0px; */
   border-bottom: 2px solid #dbd8d8;
 }
 #salesChart {
-  width: 100%;
-  height: 220px !important ;
+  width: 100% !important;
+  height: 240px !important ;
 }
 .input-checkin {
   border: 1px solid #a7a7a7fa;
@@ -2046,6 +2045,7 @@ tbody td img {
   height: 35px;
   padding: 3px !important;
   font-size: 14px;
+  border-radius: 0px !important;
 }
 
 /* Add  transport */
@@ -2122,5 +2122,15 @@ tbody td img {
 .double-table{
   margin-top: -50px !important;
 }
-
+.progress-bar-height{
+ height: 7px !important;
+}
+.pagination-page-items a{
+  color: #000 !important;
+  font-weight: 500;
+}
+.data-filter-button{
+  height: 40px !important;
+  background-color: #e8eefa !important;
+}
 /* Add Double Banner End*/
