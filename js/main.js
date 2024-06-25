@@ -80,3 +80,73 @@ function bussinessclass() {
     event.currentTarget.classList.add('active');
 }
 /* Add pakages JS */
+// Start Stadium form validations
+ document.getElementById('addStadiumForm').addEventListener('submit', function (event) {
+            let isValid = true;
+
+            // Stadium Name Validation
+            const formStadiumNameInput = document.getElementById('formStadiumNameInput');
+            const errorFormStadiumNameInput = document.getElementById('errorFormStadiumNameInput');
+            if (formStadiumNameInput.value.length < 3 || formStadiumNameInput.value.length > 50) {
+                errorFormStadiumNameInput.textContent = 'Stadium name must be between 3 and 50 characters.';
+                isValid = false;
+            } else {
+                errorFormStadiumNameInput.textContent = '';
+            }
+
+            // City Validation
+            const formStadiumCityInput = document.getElementById('formStadiumCityInput');
+            const errorFormStadiumCityInput = document.getElementById('errorFormStadiumCityInput');
+            if (formStadiumCityInput.value.length < 2 || formStadiumCityInput.value.length > 50) {
+                errorFormStadiumCityInput.textContent = 'City must be between 2 and 50 characters.';
+                isValid = false;
+            } else {
+                errorFormStadiumCityInput.textContent = '';
+     }
+     // Country Validation
+            const formStadiumCountryInput = document.getElementById('formStadiumCountryInput');
+            const errorFormStadiumCountryInput = document.getElementById('errorFormStadiumCountryInput');
+            if (formStadiumCountryInput.value.length < 2 || formStadiumCountryInput.value.length > 50) {
+                errorFormStadiumCountryInput.textContent = 'City must be between 2 and 50 characters.';
+                isValid = false;
+            } else {
+                errorFormStadiumCountryInput.textContent = '';
+            }
+
+
+            // Description Validation
+            const formStadiumDescription = document.getElementById('formStadiumDescription');
+            const errorFormStadiumDescription = document.getElementById('errorFormStadiumDescription');
+            if (formStadiumDescription.value.length < 10 || formStadiumDescription.value.length > 200) {
+                errorFormStadiumDescription.textContent = 'Description must be between 10 and 200 characters.';
+                isValid = false;
+            } else {
+                errorFormStadiumDescription.textContent = '';
+            }
+
+            // Coordinates Validation
+            // const coordinates = document.getElementById('coordinates');
+            // const coordinatesError = document.getElementById('coordinates-error');
+            // const coordinatesPattern = /^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6},\s*-?([1]?[0-7]?[0-9]|[1-9]0)\.{1}\d{1,6}$/;
+            // if (!coordinatesPattern.test(coordinates.value)) {
+            //     coordinatesError.textContent = 'Coordinates must be in the format: latitude, longitude (e.g., 12.345678, -98.765432).';
+            //     isValid = false;
+            // } else {
+            //     coordinatesError.textContent = '';
+            // }
+
+            // Seating Map Validation
+            // const seatingMap = document.getElementById('seating-map');
+            // const seatingMapError = document.getElementById('seating-map-error');
+            // if (seatingMap.files.length === 0) {
+            //     seatingMapError.textContent = 'Please upload an image file for the seating map.';
+            //     isValid = false;
+            // } else {
+            //     seatingMapError.textContent = '';
+            // }
+
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+// End Stadium form validations

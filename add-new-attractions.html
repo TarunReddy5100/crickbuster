@@ -138,11 +138,30 @@
                                     <input type="text" class="add-input" id="attraction" name="attraction"
                                         placeholder="Stonehenge">
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
+                                    <label for="country" class="add-label">Country</label>
+                                    <select class="add-input">
+                                        <option selected>Select Country </option>
+                                        <option value="austrelia">Austrelia </option>
+                                        <option value="singapur">Singapur</option>
+                                        <option value="india">India</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-4">
+                                    <label for="country" class="add-label">City</label>
+                                    <select class="add-input">
+                                        <option selected>Select City </option>
+                                        <option value="austrelia">Canberra </option>
+                                        <option value="singapur">Jurong</option>
+                                        <option value="india">Banglore</option>
+                                        <option value="india">Kathmandu</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="row align-items-center mb-4">
                                     <label for="location" class="add-label">Location</label>
                                     <input type="text" class="add-input" id="location" name="location"
                                         placeholder="INDIA">
-                                </div>
+                                </div> -->
                                 <div class="row mb-4">
                                     <label for="description" class="add-label">Description</label>
                                     <textarea id="description" name="description"
@@ -174,13 +193,13 @@
                                     <input class="add-input" type="text" id="timing" placeholder="10.00AM- 06.00PM"
                                         onfocus="(this.type='time')" onblur="(this.type='text')">
                                 </div>
-                                <div class="row mb-4">
+                                <!-- <div class="row mb-4">
                                     <label class="add-label" for="contracted">Contracted</label>
                                     <div class="form-check form-switch" style="width: 50px;">
                                         <input class="form-check-input" type="checkbox" role="switch" id="contracted"
                                             checked>
                                     </div>
-                                </div>
+                                </div> -->
                                 <table class="add-attractions-table mb-4">
                                     <thead>
                                         <tr>
@@ -188,10 +207,6 @@
                                                     class="add-attractions-label">Price Details</label></td>
                                             <td style="width: 21%;"><label for="price"
                                                     class="add-attractions-label">Price</label></td>
-                                            <td style="width: 21%;"><label for="contracted-price"
-                                                    class="add-attractions-label">Contracted Price</label>
-                                            </td>
-                                            <td></td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -204,10 +219,10 @@
                                                 <input type="text" class="add-attractions-input" id="price" name="price"
                                                     placeholder="$200">
                                             </td>
-                                            <td>
+                                            <!-- <td>
                                                 <input type="text" class="add-attractions-input" id="contracted-price"
                                                     name="contracted-price" placeholder="$200">
-                                            </td>
+                                            </td> -->
                                             <td>
                                                 <a href="" class="mx-2" style="color: #5C5E62;"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
@@ -224,10 +239,10 @@
                                                 <input type="text" class="add-attractions-input" id="price" name="price"
                                                     placeholder="$200">
                                             </td>
-                                            <td>
+                                            <!-- <td>
                                                 <input type="text" class="add-attractions-input" id="contracted-price"
                                                     name="contracted-price" placeholder="$200">
-                                            </td>
+                                            </td> -->
                                             <td>
                                                 <a href="" class="mx-2" style="color: #5C5E62;"><i
                                                         class="fa-solid fa-pen-to-square"></i></a>
@@ -244,14 +259,14 @@
                                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                             class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                                 </div>
-                                <div class="row mb-4">
+                                <!-- <div class="row mb-4">
                                     <label class="add-label" for="time-slot">Different Time Slot</label>
                                     <div class="form-check form-switch" style="width: 50px;">
                                         <input class="form-check-input" type="checkbox" role="switch" id="time-slot"
                                             checked>
                                     </div>
-                                </div>
-                                <div class=" mb-4">
+                                </div> -->
+                                <!-- <div class=" mb-4">
                                     <label for="time" class="add-label mb-2 w-100">Time</label>
                                     <div class="mb-2">
                                         <input class="add-input" type="text" id="time" placeholder="9 AM- 11AM"
@@ -270,7 +285,7 @@
                                                 class="fa-solid fa-trash"></i></a>
                                                 <a href="" class="btn add-hotel-table-btn">Add</a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </form>

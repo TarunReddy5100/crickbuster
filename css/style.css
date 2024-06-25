@@ -710,7 +710,7 @@ table.table-data-scrollbar .tournament-table-body {
 }
 .content-heading {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 600 !important;
   padding: 8px 8px;
   border-bottom: 1px solid #ddd;
 }
@@ -2133,4 +2133,26 @@ tbody td img {
   height: 40px !important;
   background-color: #e8eefa !important;
 }
+.error{
+  color: red;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+visibility: hidden;
+}
+.error-message:hover .error{
+color: red;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  visibility: visible !important;
+}
 /* Add Double Banner End*/
+
+ /* Tournment name  */
+
+.tournament-dropdown{
+  width: 200px !important;
+}
+
+/* Tournment name End */

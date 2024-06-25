@@ -132,7 +132,7 @@
                 </div>
             </div>
             <div class="content-container">
-                <p class="content-heading">Add Tournament</p>
+                <p class="content-heading">Add Matches</p>
                 <div class="content-body">
                     <form>
                         <div class="row">
@@ -145,17 +145,18 @@
                                 <div class="row  mb-4">
                                     <label for="hotel-country" class="banner-label">Match Type</label>
                                     <select name="hotel-country" id="hotel-country" class="add-input">
-                                        <option value="india">National</option>
-                                        <option value="india"></option>
-                                        <option value="india"></option>
-                                        <option value="india"></option>
+                                        <option value="">National</option>
+                                        <option value="">T20</option>
+                                        <option value="">IPL</option>
+                                        <option value=""></option>
                                     </select>
                                 </div>
 
                                 <div class="row align-items-center mb-4">
-                                    <label for="hotel-name" class="banner-label">Date And Time</label>
-                                    <input type="text" class="add-input" id="hotel-name" name="hotel-name"
-                                        placeholder="IPL" data-toggle="datetimepicker">
+                                    <label for="departure-date-time" class="add-label">Date & Time</label>
+                                    <input class="add-input" type="text" id="departure-date-time"
+                                        placeholder="March 26 , 2022" onfocus="(this.type='datetime-local')"
+                                        onblur="(this.type='text')">
                                 </div>
 
 
@@ -164,48 +165,6 @@
                                     <textarea id="description" name="description" placeholder="Near Airport"
                                         class="add-input"></textarea>
                                 </div>
-
-                                <div class="row align-items-center mb-4">
-                                    <label for="hotel-name" class="banner-label">Hotel date range</label>
-                                    <input type="text" class="add-input" id="hotel-name" name="hotel-name"
-                                        placeholder="IPL" data-toggle="datetimepicker">
-                                </div>
-
-                                <table class="banner-table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th>Category</th>
-                                            <th>Price</th>
-                                            <th>Hike</th>
-                                            <th>Seats Left</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><input type="text" placeholder="CAT-A"></td>
-                                            <td><input type="text" placeholder="$200"></td>
-                                            <td><input type="text" placeholder="25%"></td>
-                                            <td><input type="text" placeholder="02"></td>
-                                            <td><i class="fa-solid fa-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text" placeholder="CAT-B"></td>
-                                            <td><input type="text" placeholder="$200"></td>
-                                            <td><input type="text" placeholder="25%"></td>
-                                            <td><input type="text" placeholder="02"></td>
-                                            <td><i class="fa-solid fa-trash"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td><input type="text" placeholder="Input"></td>
-                                            <td><input type="text" placeholder="$$$"></td>
-                                            <td><input type="text" placeholder="00%"></td>
-                                            <td><input type="text" placeholder="0"></td>
-                                            <td><i class="fa-solid fa-trash"></i></td>
-                                            <td><a href="#" class="btn add-new-btn">Add</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
 
                             </div>
                             <div class="col-lg-6">
@@ -264,7 +223,7 @@
                 </div>
                 <div style="float: right;">
                     <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
+                    <a href="matches.html" class="btn save-btn">SAVE</a>
                 </div>
             </div>
         </section>
