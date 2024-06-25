@@ -128,17 +128,20 @@
                 </div>
             </div>
             <div class="content-container">
-                <p class="content-heading">Add New Team</p>
-                <div class="content-body">
-                    <form>
-                        <div class="row align-items-center mb-4">
+                <form action="">
+                    <p class="content-heading">Add New Team</p>
+                    <div class="content-body">
+                        <div class="row mb-4">
                             <label for="team-name" class="add-label">Team name</label>
-                            <input type="text" class="add-input" id="team-name" name="team-name"
-                                placeholder="Chennai Super Kings">
+                            <div class="error-message" style="width:300px">
+                                <input type="text" class="add-input" id="team-name" name="team-name"
+                                    placeholder="Chennai Super Kings">
+                                <span class="error">Enter Stadium name</span>
+                            </div>
                         </div>
                         <div class="row mb-4">
                             <label for="team-logo" class="add-label">Team Logo</label>
-                            <div class="w-25 p-0">
+                            <div class="w-25 p-0 error-message" style="width: 300px;">
                                 <div class="teams-file-upload">
                                     <label for="team-logo" class="teams-file-upload-input">Team Logo</label>
                                     <input type="file" id="team-logo" name="team-logo" class="teams-file-upload-input">
@@ -147,23 +150,27 @@
                                 </div>
                                 <div class="teams-file-info">CSK.jpeg (500Kb) <span class="remove-file">&#x2716;</span>
                                 </div>
+                                <span class="error">Upload required image</span>
                             </div>
                         </div>
-                        <div class="row align-items-center mb-4">
+                        <div class="row mb-4">
                             <label for="team-category" class="add-label">Category</label>
-                            <select name="team-category" id="team-category" class="add-input">
-                                <option value="all">All</option>
-                                <option value="international">International</option>
-                                <option value="national">National</option>
-                                <option value="county">County</option>
-                            </select>
+                            <div class="error-message" style="width:300px">
+                                <select name="team-category" id="team-category" class="add-input">
+                                    <option value="all">All</option>
+                                    <option value="international">International</option>
+                                    <option value="national">National</option>
+                                    <option value="county">County</option>
+                                </select>
+                                <span class="error">Category is required</span>
+                            </div>
                         </div>
-                    </form>
-                </div>
-                <div style="float: right;" class="mt-2">
-                    <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
-                </div>
+                    </div>
+                    <div style="float: right;" class="mt-2">
+                        <a href="#" class="btn cancel-btn">CANCEL</a>
+                        <a href="#" class="btn save-btn">SAVE</a>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- End Content -->

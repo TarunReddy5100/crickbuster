@@ -128,34 +128,43 @@
                 </div>
             </div>
             <div class="content-container">
-                <p class="content-heading">Add Attractions</p>
-                <div class="content-body">
-                    <form>
+                <form action="">
+                    <p class="content-heading">Add Attractions</p>
+                    <div class="content-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="attraction" class="add-label">Attraction</label>
-                                    <input type="text" class="add-input" id="attraction" name="attraction"
-                                        placeholder="Stonehenge">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="text" class="add-input" id="attraction" name="attraction"
+                                            placeholder="Stonehenge">
+                                        <span class="error">Attraction name is required</span>
+                                    </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="country" class="add-label">Country</label>
-                                    <select class="add-input">
-                                        <option selected>Select Country </option>
-                                        <option value="austrelia">Austrelia </option>
-                                        <option value="singapur">Singapur</option>
-                                        <option value="india">India</option>
-                                    </select>
+                                    <div class="error-message" style="width: 300px;">
+                                        <select class="add-input">
+                                            <option selected>Select Country </option>
+                                            <option value="austrelia">Austrelia </option>
+                                            <option value="singapur">Singapur</option>
+                                            <option value="india">India</option>
+                                        </select>
+                                        <span class="error">Please select a country</span>
+                                    </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="country" class="add-label">City</label>
-                                    <select class="add-input">
-                                        <option selected>Select City </option>
-                                        <option value="austrelia">Canberra </option>
-                                        <option value="singapur">Jurong</option>
-                                        <option value="india">Banglore</option>
-                                        <option value="india">Kathmandu</option>
-                                    </select>
+                                    <div class="error-message" style="width: 300px;">
+                                        <select class="add-input">
+                                            <option selected>Select City </option>
+                                            <option value="austrelia">Canberra </option>
+                                            <option value="singapur">Jurong</option>
+                                            <option value="india">Banglore</option>
+                                            <option value="india">Kathmandu</option>
+                                        </select>
+                                        <span class="error">Please select a city</span>
+                                    </div>
                                 </div>
                                 <!-- <div class="row align-items-center mb-4">
                                     <label for="location" class="add-label">Location</label>
@@ -164,12 +173,15 @@
                                 </div> -->
                                 <div class="row mb-4">
                                     <label for="description" class="add-label">Description</label>
-                                    <textarea id="description" name="description"
-                                        placeholder="Near Airport, Hospital ABC 24/7" class="add-input"></textarea>
+                                    <div class="error-message" style="width: 300px;">
+                                        <textarea id="description" name="description"
+                                            placeholder="Near Airport, Hospital ABC 24/7" class="add-input"></textarea>
+                                        <span class="error">Type description min 20 to max 50</span>
+                                    </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="image" class="add-label">Image</label>
-                                    <div class="p-0" style="width: 300px;">
+                                    <div class="p-0 error-message" style="width: 300px;">
                                         <div class="teams-file-upload">
                                             <label for="image" class="teams-file-upload-input">Thumbnail</label>
                                             <input type="file" id="image" name="image" class="teams-file-upload-input">
@@ -179,12 +191,16 @@
                                         <div class="teams-file-info">Images (500Kb) <span
                                                 class="remove-file">&#x2716;</span>
                                         </div>
+                                        <span class="error">Upload required images</span>
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-email" class="add-label">Email</label>
-                                    <input type="email" class="add-input" id="hotel-email" name="hotel-email"
-                                        placeholder="Contact@courtyard.in">
+                                    <div class="error-message" style="width: 300px;">
+                                        <input type="email" class="add-input" id="hotel-email" name="hotel-email"
+                                            placeholder="Contact@courtyard.in">
+                                        <span class="error">Email is required</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -288,12 +304,12 @@
                                 </div> -->
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div style="float: right;" class="mt-2">
-                    <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
-                </div>
+                    </div>
+                    <div style="float: right;" class="mt-2">
+                        <a href="#" class="btn cancel-btn">CANCEL</a>
+                        <a href="#" class="btn save-btn">SAVE</a>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- End Content -->

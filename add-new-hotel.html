@@ -128,39 +128,54 @@
                 </div>
             </div>
             <div class="content-container">
-                <p class="content-heading">Add New Hotel</p>
-                <div class="content-body">
-                    <form>
+                <form action="">
+                    <p class="content-heading">Add New Hotel</p>
+                    <div class="content-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-name" class="add-label">Hotel name</label>
-                                    <input type="text" class="add-input" id="hotel-name" name="hotel-name"
-                                        placeholder="Court Yard">
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="add-input" id="hotel-name" name="hotel-name"
+                                            placeholder="Court Yard">
+                                        <span class="error">Hotel name is required</span>
+                                    </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-address" class="add-label">Address</label>
-                                    <input type="text" class="add-input" id="hotel-address" name="hotel-address"
-                                        placeholder="Near Airport">
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="add-input" id="hotel-address" name="hotel-address"
+                                            placeholder="Near Airport">
+                                        <span class="error">Hotel Address is required</span>
+                                    </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-country" class="add-label">Category</label>
-                                    <select name="hotel-country" id="hotel-country" class="add-input">
-                                        <option value="india">India</option>
-                                        <option value="india">India</option>
-                                        <option value="india">India</option>
-                                        <option value="india">India</option>
-                                    </select>
+                                    <div class="error-message" style="width:300px">
+                                        <select name="hotel-country" id="hotel-country" class="add-input">
+                                            <option value="india">India</option>
+                                            <option value="india">India</option>
+                                            <option value="india">India</option>
+                                            <option value="india">India</option>
+                                        </select>
+                                        <span class="error">Hotel Country is required</span>
+                                    </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="description" class="add-label">Description</label>
-                                    <textarea id="description" name="description" placeholder="Near Airport"
-                                        class="add-input"></textarea>
+                                    <div class="error-message" style="width:300px">
+                                        <textarea id="description" name="description" placeholder="Near Airport"
+                                            class="add-input"></textarea>
+                                        <span class="error">Hotel Description is required</span>
+                                    </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-email" class="add-label">Email</label>
-                                    <input type="email" class="add-input" id="hotel-email" name="hotel-email"
-                                        placeholder="Contact@courtyard.in">
+                                    <div class="error-message" style="width:300px">
+                                        <input type="email" class="add-input" id="hotel-email" name="hotel-email"
+                                            placeholder="Contact@courtyard.in">
+                                        <span class="error">Email is required</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -170,28 +185,40 @@
                                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                             class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="team-category" class="add-label">Category</label>
-                                    <select name="team-category" id="team-category" class="add-input">
-                                        <option value="chennai">Chennai</option>
-                                        <option value="chennai">Chennai</option>
-                                        <option value="chennai">Chennai</option>
-                                        <option value="chennai">Chennai</option>
-                                    </select>
+                                    <div class="error-message" style="width:300px">
+                                        <select name="team-category" id="team-category" class="add-input">
+                                            <option value="chennai">Chennai</option>
+                                            <option value="chennai">Chennai</option>
+                                            <option value="chennai">Chennai</option>
+                                            <option value="chennai">Chennai</option>
+                                        </select>
+                                        <span class="error">Category is required</span>
+                                    </div>
                                 </div>
                                 <div class="row align-items-center mb-4">
                                     <label for="hotel-zip" class="add-label">Zip Code</label>
-                                    <input type="text" class="add-input" id="hotel-zip" name="hotel-zip"
-                                        placeholder="624 005">
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="add-input" id="hotel-zip" name="hotel-zip"
+                                            placeholder="624 005">
+                                        <span class="error">Zip Code is required</span>
+                                    </div>
                                 </div>
                                 <p class="add-label">Cordinates</p>
-                                <div class="row align-items-center mb-4 ms-1">
+                                <div class="row  mb-4 ms-1">
                                     <label for="hotel-latitude" class="add-label">Latitude</label>
-                                    <input type="text" class="add-input mb-2" id="hotel-latitude" name="hotel-latitude"
-                                        placeholder="152'545">
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="add-input mb-2" id="hotel-latitude"
+                                            name="hotel-latitude" placeholder="152'545">
+                                        <span class="error">Latitude is required</span>
+                                    </div>
                                     <label for="hotel-longitude" class="add-label">Longitude</label>
-                                    <input type="text" class="add-input" id="hotel-longitude" name="hotel-longitude"
-                                        placeholder="152'545">
+                                    <div class="error-message" style="width:300px">
+                                        <input type="text" class="add-input" id="hotel-longitude" name="hotel-longitude"
+                                            placeholder="152'545">
+                                        <span class="error">Longitude is required</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +227,7 @@
                             <div class="col-lg-6">
                                 <div class="row mb-4">
                                     <label for="hotel-thumbnail" class="add-label">Thumbnail</label>
-                                    <div class="p-0" style="width: 300px;">
+                                    <div class="p-0 error-message" style="width: 300px;">
                                         <div class="teams-file-upload">
                                             <label for="hotel-thumbnail"
                                                 class="teams-file-upload-input">Thumbnail</label>
@@ -212,11 +239,12 @@
                                         <div class="teams-file-info">Hotel Images (500Kb) <span
                                                 class="remove-file">&#x2716;</span>
                                         </div>
+                                        <span class="error">Upload required image</span>
                                     </div>
                                 </div>
                                 <div class="row mb-4">
                                     <label for="hotel-others" class="add-label">Others</label>
-                                    <div class="p-0" style="width: 300px;">
+                                    <div class="p-0 error-message" style="width: 300px;">
                                         <div class="teams-file-upload">
                                             <label for="hotel-others" class="teams-file-upload-input">Others</label>
                                             <input type="file" id="hotel-others" name="hotel-others"
@@ -233,6 +261,7 @@
                                         <div class="teams-file-info">Hotel Images 3 (500Kb) <span
                                                 class="remove-file">&#x2716;</span>
                                         </div>
+                                        <span class="error">Upload required image</span>
                                     </div>
                                 </div>
                                 <div class="row mb-4">
@@ -242,11 +271,14 @@
                                             id="hotel-contracted" checked>
                                     </div>
                                 </div>
-                                <div class="row align-items-center mb-4">
+                                <div class="row mb-4">
                                     <label for="hotel-contract-date" class="add-label">Contract Date</label>
-                                    <input class="add-input" type="text" id="hotel-contract-date"
-                                        placeholder="March 20- March 25, 2022" onfocus="(this.type='date')"
-                                        onblur="(this.type='text')">
+                                    <div class="error-message" style="width:300px">
+                                        <input class="add-input" type="text" id="hotel-contract-date"
+                                            placeholder="March 20- March 25, 2022" onfocus="(this.type='date')"
+                                            onblur="(this.type='text')">
+                                        <span class="error">Date is required</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -278,68 +310,80 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input" placeholder="Standard King Bed (2 People in 1 Bed)"></td>
+                                        <td><input type="text" class="add-hotel-table-input"
+                                                placeholder="Standard King Bed (2 People in 1 Bed)"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
-                                        <td><a href="" class="add-hotel-table-icon"><i class="fa-solid fa-trash"></i></a></td>
+                                        <td><a href="" class="add-hotel-table-icon"><i
+                                                    class="fa-solid fa-trash"></i></a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input" placeholder="Standard Double (2 People In 1 Bed)"></td>
+                                        <td><input type="text" class="add-hotel-table-input"
+                                                placeholder="Standard Double (2 People In 1 Bed)"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
-                                        <td><a href="" class="add-hotel-table-icon"><i class="fa-solid fa-trash"></i></a></td>
+                                        <td><a href="" class="add-hotel-table-icon"><i
+                                                    class="fa-solid fa-trash"></i></a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input" placeholder="Standard Twin (2 People In 2 Beds)"></td>
+                                        <td><input type="text" class="add-hotel-table-input"
+                                                placeholder="Standard Twin (2 People In 2 Beds)"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
-                                        <td><a href="" class="add-hotel-table-icon"><i class="fa-solid fa-trash"></i></a></td>
+                                        <td><a href="" class="add-hotel-table-icon"><i
+                                                    class="fa-solid fa-trash"></i></a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input" placeholder="2 Double Beds Standard Room (4 People In 2 Beds)"></td>
+                                        <td><input type="text" class="add-hotel-table-input"
+                                                placeholder="2 Double Beds Standard Room (4 People In 2 Beds)"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
-                                        <td><a href="" class="add-hotel-table-icon"><i class="fa-solid fa-trash"></i></a></td>
+                                        <td><a href="" class="add-hotel-table-icon"><i
+                                                    class="fa-solid fa-trash"></i></a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="text" class="add-hotel-table-input" placeholder="Standard Single (Single Occupancy)"></td>
+                                        <td><input type="text" class="add-hotel-table-input"
+                                                placeholder="Standard Single (Single Occupancy)"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
                                         <td><input type="text" class="add-hotel-table-input" placeholder="$200"></td>
-                                        <td><a href="" class="add-hotel-table-icon"><i class="fa-solid fa-trash"></i></a></td>
+                                        <td><a href="" class="add-hotel-table-icon"><i
+                                                    class="fa-solid fa-trash"></i></a>
+                                        </td>
                                         <td><a href="" class="btn add-hotel-table-btn">Add</a></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-
-
-
-                    </form>
-                </div>
-                <div style="float: right;" class="mt-2">
-                    <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
-                </div>
+                    </div>
+                    <div style="float: right;" class="mt-2">
+                        <a href="#" class="btn cancel-btn">CANCEL</a>
+                        <a href="#" class="btn save-btn">SAVE</a>
+                    </div>
+                </form>
             </div>
         </section>
         <!-- End Content -->

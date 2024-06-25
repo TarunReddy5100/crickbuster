@@ -881,6 +881,7 @@ thead th {
 }
 
 .add-label {
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 500;
   width: 170px;
@@ -1340,7 +1341,7 @@ label {
 .add-question-modal {
   background-color: #000000a6;
   height: 100%;
-  padding: 200px 0;
+  padding-top: 10%;
 }
 .model-heading {
   font-weight: 700 !important;
