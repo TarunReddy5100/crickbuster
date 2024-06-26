@@ -36,7 +36,7 @@
                 <h2><img src="images/logo.png" class="w-75" alt=""></h2>
             </div>
             <ul class="sidebar-nav">
-                <li class="active" data-toggle="tooltip"  data-placement="right" title="Dashboard">
+                <li class="active" data-toggle="tooltip" data-placement="right" title="Dashboard">
                     <a href="index.html"><i class="fa-brands fa-slack"></i>Dashboard</a>
                 </li>
                 <li data-toggle="tooltip" data-placement="right" title="Packages">
@@ -115,9 +115,21 @@
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-6">0
                                     <span class="visually-hidden">unread messages</span></span>
                             </button>
-                            <img src="images/profile1.jpg" class="  border border-secondary profile-image mx-5"
-                                alt="profile">
 
+                            <div class="btn-group" role="group">
+                                <a href="#!" class="border border-0 d-inline p-0 m-0 bg-none" data-toggle="dropdown">
+                                    <img src="images/profile1.jpg" class="  border border-secondary profile-image mx-5"
+                                        alt="profile">
+                                </a>
+                                <div class="dropdown-menu logout-button " aria-labelledby="btnGroupDrop1">
+                                    <a class="text-white" href="login-page.html">
+                                        <div class="ps-5">
+                                            <span><i class="fa-solid fa-right-from-bracket"></i></span>
+                                            <span class="ms-1">Logout</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </span>
 
                     </div>

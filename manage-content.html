@@ -135,219 +135,285 @@
                 <div class="row px-3">
                     <!-- Content Management  -->
                     <div class="content-container">
-                        <p class="content-heading">Add Content</p>
-                        <div class="content-body">
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3 mb-3">Tournament content-Home page</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mt-3">
-                                        <label for="tourDescription">Description</label>
-                                        <textarea class="form-control w-25 ms-3" id="tourDescription" rows="3"
-                                            placeholder="Description"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Discover your tour content-Home page</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mt-3">
-                                        <label for="tourDescription">Description</label>
-                                        <textarea class="form-control w-25 ms-3" id="tourDescription" rows="3"
-                                            placeholder="Description"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Matches- Ticktets screen </p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
-                                        <label for="title" class="me-3">Title</label>
-                                        <textarea class="form-control w-50" id="title" rows="1"
-                                            placeholder="Select Match Tickets "></textarea>
-                                    </div>
-                                    <div class="form-group d-flex ms-4 align-items-center">
-                                        <label for="heading" class="me-3">Heading</label>
-                                        <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
-                                            placeholder="Single Match And Multiple Matches"></textarea>
+                        <form>
+                            <p class="content-heading">Add Content</p>
+                            <div class="content-body">
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3 mb-3">Tournament content-Home page</p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mt-3">
+                                            <label for="tourDescription">Description</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-25 ms-3" id="tourDescription" rows="3"
+                                                    placeholder="Description"></textarea>
+                                                <span class="error ms-3">Min 20 characters required</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                            </div>
-
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Flights</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
-                                        <label for="title" class="me-3">Title</label>
-                                        <textarea class="form-control w-50" id="title" rows="1"
-                                            placeholder="Select Match Tickets "></textarea>
-                                    </div>
-                                    <div class="form-group d-flex ms-4 align-items-center">
-                                        <label for="heading" class="me-3">Heading</label>
-                                        <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
-                                            placeholder="Single Match And Multiple Matches"></textarea>
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3">Discover your tour content-Home page</p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mt-3">
+                                            <label for="tourDescription">Description</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-25 ms-3" id="tourDescription" rows="3"
+                                                    placeholder="Description"></textarea>
+                                                <span class="error ms-3">Min 20 characters required</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Attactions</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
-                                        <label for="title" class="me-3">Title</label>
-                                        <textarea class="form-control w-50" id="title" rows="1"
-                                            placeholder="Select Match Tickets "></textarea>
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3">Matches- Ticktets screen </p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
+                                            <label for="title" class="me-3">Title</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50" id="title" rows="1"
+                                                    placeholder="Select Match Tickets "></textarea>
+                                                <span class="error">Title required</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex ms-4 align-items-center">
+                                            <label for="heading" class="me-3">Heading</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
+                                                    placeholder="Single Match And Multiple Matches"></textarea>
+                                                <span class="error">Heading required</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group d-flex ms-4 align-items-center">
-                                        <label for="heading" class="me-3">Heading</label>
-                                        <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
-                                            placeholder="Single Match And Multiple Matches"></textarea>
+
+                                </div>
+
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3">Flights</p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
+                                            <label for="title" class="me-3">Title</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50" id="title" rows="1"
+                                                    placeholder="Select Match Tickets "></textarea>
+                                                <span class="error">Title required</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex ms-4 align-items-center">
+                                            <label for="heading" class="me-3">Heading</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
+                                                    placeholder="Single Match And Multiple Matches"></textarea>
+                                                <span class="error">Heading required</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Intra/Intercity</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
-                                        <label for="title" class="me-3">Title</label>
-                                        <textarea class="form-control w-50" id="title" rows="1"
-                                            placeholder="Select Match Tickets "></textarea>
-                                    </div>
-                                    <div class="form-group d-flex ms-4 align-items-center">
-                                        <label for="heading" class="me-3">Heading</label>
-                                        <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
-                                            placeholder="Single Match And Multiple Matches"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Tournament</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
-                                        <label for="title" class="me-3 ">Title</label>
-                                        <textarea class="form-control w-50" id="title" rows="1"
-                                            placeholder="Select Match Tickets "></textarea>
-                                    </div>
-                                    <div class="form-group d-flex ms-4 align-items-center">
-                                        <label for="heading" class="me-3">Heading</label>
-                                        <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
-                                            placeholder="Single Match And Multiple Matches"></textarea>
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3">Attactions</p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
+                                            <label for="title" class="me-3">Title</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50" id="title" rows="1"
+                                                    placeholder="Select Match Tickets "></textarea>
+                                                <span class="error">Title required</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex ms-4 align-items-center">
+                                            <label for="heading" class="me-3">Heading</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
+                                                    placeholder="Single Match And Multiple Matches"></textarea>
+                                                <span class="error">Heading required</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">FAQ</p>
-                                <table class="table table-borderless ms-2">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">S.No</th>
-                                            <th scope="col">Questions</th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">1</td>
-                                            <td>What is the booking proceed for a packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">2</td>
-                                            <td>Whom Do I Contact If I Require Further Information On The Packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">3</td>
-                                            <td>What Payment Modes Are Accepted By Cricbuster?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">4</td>
-                                            <td>What is the booking proceed for a packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">5</td>
-                                            <td>What Payment Modes Are Accepted By Cricbuster?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">6</td>
-                                            <td>What is the booking proceed for a packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">7</td>
-                                            <td>Whom Do I Contact If I Require Further Information On The Packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-
-                                            </td>
-
-                                        </tr>
-
-                                        <tr>
-                                            <td scope="row">8</td>
-                                            <td>What is the booking proceed for a packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-
-                                            </td>
-
-                                        </tr>
-
-                                        <tr>
-                                            <td scope="row">9</td>
-                                            <td>Whom Do I Contact If I Require Further Information On The Packages?</td>
-                                            <td><a href="#"><i class="fa-solid fa-pen-to-square me-3"></i></a>
-                                                <a href="#"><i class="fa-solid fa-trash"></i></a></i>
-                                                <a href="#" class="btn add-hotel-table-btn m-0 p-1 ms-3"
-                                                id="addQuestionBtn">Add</a>
-                                            </td>
-
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-
-                            <div class="row p-2">
-                                <p class="tournament-text ps-4 mt-3">Terms & Conditions</p>
-                                <div class="col">
-                                    <div class="form-group d-flex ms-4 mt-3">
-                                        <label for="tourDescription">Content</label>
-                                        <textarea class="form-control w-25 ms-3 tournamentdescription"
-                                            id="tourDescription" rows="4"
-                                            placeholder="Single Match And Multiple Matches Bookings Included"></textarea>
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3">Intra/Intercity</p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
+                                            <label for="title" class="me-3">Title</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50" id="title" rows="1"
+                                                    placeholder="Select Match Tickets "></textarea>
+                                                <span class="error">Title required</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex ms-4 align-items-center">
+                                            <label for="heading" class="me-3">Heading</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
+                                                    placeholder="Single Match And Multiple Matches"></textarea>
+                                                <span class="error">Heading required</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="row p-2">
+                                    <p class="tournament-text ps-4 mt-3">Tournament</p>
+                                    <div class="col">
+                                        <div class="form-group d-flex ms-4 mb-3 mt-3 align-items-center">
+                                            <label for="title" class="me-3 ">Title</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50" id="title" rows="1"
+                                                    placeholder="Select Match Tickets "></textarea>
+                                                <span class="error">Title required</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group d-flex ms-4 align-items-center">
+                                            <label for="heading" class="me-3">Heading</label>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea class="form-control w-50 overflow-auto" id="heading" rows="1"
+                                                    placeholder="Single Match And Multiple Matches"></textarea>
+                                                <span class="error">Heading required</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row p-2">
+                                        <p class="tournament-text ps-4 mt-3">FAQ</p>
+                                        <table class="table table-borderless ms-2">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">S.No</th>
+                                                    <th scope="col">Questions</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>What is the booking proceed for a packages?</td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td>Whom Do I Contact If I Require Further Information On The
+                                                        Packages?
+                                                    </td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">3</td>
+                                                    <td>What Payment Modes Are Accepted By Cricbuster?</td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">4</td>
+                                                    <td>What is the booking proceed for a packages?</td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">5</td>
+                                                    <td>What Payment Modes Are Accepted By Cricbuster?</td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">6</td>
+                                                    <td>What is the booking proceed for a packages?</td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">7</td>
+                                                    <td>Whom Do I Contact If I Require Further Information On The
+                                                        Packages?
+                                                    </td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">8</td>
+                                                    <td>What is the booking proceed for a packages?</td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td scope="row">9</td>
+                                                    <td>Whom Do I Contact If I Require Further Information On The
+                                                        Packages?
+                                                    </td>
+                                                    <td><a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-pen-to-square me-3"></i></a>
+                                                        <a href="#" class="text-secondary fs-5"><i
+                                                                class="fa-solid fa-trash"></i></a></i>
+                                                        <a href="#" class="btn add-hotel-table-btn m-0 p-1 ms-3"
+                                                            id="addQuestionBtn">Add</a>
+
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="row p-2">
+                                        <p class="tournament-text ps-4 mt-3">Terms & Conditions</p>
+                                        <div class="col">
+                                            <div class="form-group d-flex ms-4 mt-3">
+                                                <label for="tourDescription">Content</label>
+                                                <div class="error-message" style="width:300px">
+                                                    <textarea class="form-control w-25 ms-3 tournamentdescription"
+                                                        id="tourDescription" rows="4"
+                                                        placeholder="Single Match And Multiple Matches Bookings Included"></textarea>
+                                                    <span class="error ms-3">Min 20 characters required</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+                            <div style="float: right;">
+                                <a href="#" class="btn cancel-btn">CANCEL</a>
+                                <a href="#" class="btn save-btn">SAVE</a>
+                            </div>
+                        </form>
 
-
-                        </div>
-                        <div style="float: right;">
-                            <a href="#" class="btn cancel-btn">CANCEL</a>
-                            <a href="#" class="btn save-btn">SAVE</a>
-                        </div>
                     </div>
                 </div>
             </div>

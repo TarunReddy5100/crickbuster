@@ -128,7 +128,7 @@
             </div>
 
             <div class="banner-container">
-                <div class="team-table-body hoteltab" style="display:block">
+                <form>
                     <p class="banner-heading tournament-level-table ">Add Contents</p>
 
                     <div class="banner-body table-header-section">
@@ -144,7 +144,8 @@
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div>
                                             <div class="row align-items-center mb-4">
-                                                <label for="banner-category" class="banner-label">Banner type</label>
+                                                <label for="banner-category" class="banner-label">Banner
+                                                    type</label>
                                                 <select name="banner-category" id="banner-category"
                                                     class="banner-image">
                                                     <option value="image">Image</option>
@@ -182,31 +183,38 @@
                                         <div class="pb-5 mb-5" style="width:500px;">
                                             <div class="row align-items-center mb-3">
                                                 <label for="banner-name" class="banner-label">Title</label>
-                                                <input type="text" class="banner-input" id="banner-name"
-                                                    name="banner-name"
-                                                    placeholder="Are You Excited For ICC T20 World Cup">
+                                                <div class="error-message" style="width:300px">
+                                                    <input type="text" class="banner-input" id="banner-name"
+                                                        name="banner-name"
+                                                        placeholder="Are You Excited For ICC T20 World Cup">
+                                                    <span class="error">Title required</span>
+                                                </div>
                                             </div>
                                             <div class="row align-items-center mb-3">
                                                 <label for="banner-name" class="banner-label">Description</label>
-                                                <textarea type="text" class="banner-input tournamentdescription"
-                                                    id="banner-name" name="banner-name" rows="3"
-                                                    placeholder="lorem"></textarea>
+                                                <div class="error-message" style="width:300px">
+                                                    <textarea type="text" class="banner-input tournamentdescription"
+                                                        id="banner-name" name="banner-name" rows="3"
+                                                        placeholder="lorem"></textarea>
+                                                    <span class="error">Min 20 characters required</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                             </div>
-                            </form>
-                        </div>
 
-                        <div class="">
-                            <p class="ms-5 mt-4 mb-1">Banner 02</p>
-                            <div class="banner-section">
 
-                                <form>
+
+                            <div class="">
+                                <p class="ms-5 mt-4 mb-1">Banner 02</p>
+                                <div class="banner-section">
+
+
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div>
                                             <div class="row align-items-center mb-4">
-                                                <label for="banner-category" class="banner-label">Banner type</label>
+                                                <label for="banner-category" class="banner-label">Banner
+                                                    type</label>
                                                 <select name="banner-category" id="banner-category"
                                                     class="banner-image">
                                                     <option value="image">Image</option>
@@ -215,7 +223,8 @@
                                             </div>
 
                                             <div class="row mb-4 d-flex">
-                                                <label for="banner-logo" class="banner-label">Banner Image</label>
+                                                <label for="banner-logo" class="banner-label">Banner
+                                                    Image</label>
                                                 <div class="p-0" style="width: 350px;">
                                                     <div class="banner-file-upload">
                                                         <label for="banner-logo" class="banner-file-upload-input">Team
@@ -232,7 +241,8 @@
                                             </div>
 
                                             <div class="row align-items-center mb-4">
-                                                <label for="banner-name" class="banner-label">Button link</label>
+                                                <label for="banner-name" class="banner-label">Button
+                                                    link</label>
                                                 <input type="text" class="banner-input" id="banner-name"
                                                     name="banner-name" placeholder="World Cup Package 1">
                                             </div>
@@ -244,32 +254,38 @@
                                         <div class="pb-5 mb-5" style="width:500px;">
                                             <div class="row align-items-center mb-3">
                                                 <label for="banner-name" class="banner-label">Title</label>
-                                                <input type="text" class="banner-input" id="banner-name"
-                                                    name="banner-name"
-                                                    placeholder="Are You Excited For ICC T20 World Cup">
+                                                <div class="error-message" style="width:300px">
+                                                    <input type="text" class="banner-input" id="banner-name"
+                                                        name="banner-name"
+                                                        placeholder="Are You Excited For ICC T20 World Cup">
+                                                    <span class="error">Title required</span>
+                                                </div>
                                             </div>
                                             <div class="row align-items-center mb-3">
                                                 <label for="banner-name" class="banner-label">Description</label>
-                                                <textarea type="text" class="banner-input tournamentdescription"
-                                                    id="banner-name" name="banner-name" rows="3"
-                                                    placeholder="lorem"></textarea>
+                                                <div class="error-message" style="width:300px">
+                                                    <textarea type="text" class="banner-input tournamentdescription"
+                                                        id="banner-name" name="banner-name" rows="3"
+                                                        placeholder="lorem"></textarea>
+                                                    <span class="error">Min 20 characters required</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                            </div>
-                            </form>
-                        </div>
+                                </div>
 
-                        <div class="">
-                            <div class="d-flex justify-content-between banner-body-text align-items-center">
-                                <p class="ms-5 m-0">Ad banner</p>
-                                <a href="#" class="btn add-btn me-5">+ Add New Ad</a>
                             </div>
+
                             <div class="">
-                                <p class="ms-5 mt-4 mb-1">Banner 01</p>
-                                <div class="banner-section">
+                                <div class="d-flex justify-content-between banner-body-text align-items-center">
+                                    <p class="ms-5 m-0">Ad banner</p>
+                                    <a href="#" class="btn add-btn me-5">+ Add New Ad</a>
+                                </div>
+                                <div class="">
+                                    <p class="ms-5 mt-4 mb-1">Banner 01</p>
+                                    <div class="banner-section">
 
-                                    <form>
+
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div>
                                                 <div class="row align-items-center mb-4">
@@ -283,7 +299,8 @@
                                                 </div>
 
                                                 <div class="row mb-4 d-flex">
-                                                    <label for="banner-logo" class="banner-label">Banner Image</label>
+                                                    <label for="banner-logo" class="banner-label">Banner
+                                                        Image</label>
                                                     <div class="p-0" style="width: 350px;">
                                                         <div class="banner-file-upload">
                                                             <label for="banner-logo"
@@ -301,7 +318,8 @@
                                                 </div>
 
                                                 <div class="row align-items-center mb-4">
-                                                    <label for="banner-name" class="banner-label">Button link</label>
+                                                    <label for="banner-name" class="banner-label">Button
+                                                        link</label>
                                                     <input type="text" class="banner-input" id="banner-name"
                                                         name="banner-name" placeholder="World Cup Package 1">
                                                 </div>
@@ -313,29 +331,35 @@
                                             <div class="pb-5 mb-5" style="width:500px;">
                                                 <div class="row align-items-center mb-3">
                                                     <label for="banner-name" class="banner-label">Title</label>
-                                                    <input type="text" class="banner-input" id="banner-name"
-                                                        name="banner-name"
-                                                        placeholder="Are You Excited For ICC T20 World Cup">
+                                                    <div class="error-message" style="width:300px">
+                                                        <input type="text" class="banner-input" id="banner-name"
+                                                            name="banner-name"
+                                                            placeholder="Are You Excited For ICC T20 World Cup">
+                                                        <span class="error">Title required</span>
+                                                    </div>
                                                 </div>
                                                 <div class="row align-items-center mb-3">
                                                     <label for="banner-name" class="banner-label">Description</label>
-                                                    <textarea type="text" class="banner-input tournamentdescription"
-                                                        id="banner-name" name="banner-name" rows="3"
-                                                        placeholder="lorem"></textarea>
+                                                    <div class="error-message" style="width:300px">
+                                                        <textarea type="text" class="banner-input tournamentdescription"
+                                                            id="banner-name" name="banner-name" rows="3"
+                                                            placeholder="lorem"></textarea>
+                                                        <span class="error">Min 20 characters required</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                </div>
-                                </form>
-                            </div>
-                        </div>
+                                    </div>
 
-                        <div class="">
-                            <div class="d-flex justify-content-between banner-body-text align-items-center">
-                                <p class="ms-5 m-2">Others</p>
-                                <!-- <a href="#" class="btn add-btn me-5">+ Add Banner</a> -->
+                                </div>
                             </div>
-                            <form>
+
+                            <div class="">
+                                <div class="d-flex justify-content-between banner-body-text align-items-center">
+                                    <p class="ms-5 m-2">Others</p>
+                                    <!-- <a href="#" class="btn add-btn me-5">+ Add Banner</a> -->
+                                </div>
+
                                 <div class="banner-section">
                                     <div class="d-flex justify-content-between">
                                         <div class="row align-items-center">
@@ -347,7 +371,8 @@
                                             lorem lorem lorem lorem loremlorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"></textarea>
                                         </div>
                                         <div class="row mb-4">
-                                            <label for="banner-logo" class="banner-label mt-1">Banner Image</label>
+                                            <label for="banner-logo" class="banner-label mt-1">Banner
+                                                Image</label>
                                             <div class="p-0" style="width: 300px;">
                                                 <div class="banner-file-upload">
                                                     <label for="banner-logo" class="banner-file-upload-input mt-3">Team
@@ -368,32 +393,46 @@
                                         <p class="ms-1 mt-5 mb-5">Cricbuster Information</p>
                                         <div class="row align-items-center mb-3">
                                             <label for="banner-name" class="banner-label">Contact</label>
-                                            <input type="tel" class="banner-input" id="banner-name" name="banner-name"
-                                                placeholder="(954)-526-5577">
+                                            <div class="error-message" style="width:300px">
+                                                <input type="tel" class="banner-input" id="banner-name"
+                                                    name="banner-name" placeholder="(954)-526-5577">
+                                                <span class="error">Contact required</span>
+                                            </div>
                                         </div>
                                         <div class="row align-items-center mb-3">
                                             <label for="banner-name" class="banner-label">Email</label>
-                                            <input type="email" class="banner-input" id="banner-name" name="banner-name"
-                                                placeholder="inquiry@cricbuster.com">
+                                            <div class="error-message" style="width:300px">
+                                                <input type="email" class="banner-input" id="banner-name"
+                                                    name="banner-name" placeholder="inquiry@cricbuster.com">
+                                                <span class="error">Email required</span>
+                                            </div>
                                         </div>
                                         <div class="row align-items-center mb-3">
                                             <label for="banner-name" class="banner-label mb-5">Address</label>
-                                            <textarea type="text" class="banner-input" id="banner-name"
-                                                name="banner-name" rows="4"
-                                                placeholder="16192 Coastal Highway,Lewes,DE 19958"></textarea>
+                                            <div class="error-message" style="width:300px">
+                                                <textarea type="text" class="banner-input" id="banner-name"
+                                                    name="banner-name" rows="4"
+                                                    placeholder="16192 Coastal Highway,Lewes,DE 19958"></textarea>
+                                                <span class="error">Address required</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                            </form>
+
+                            </div>
+
                         </div>
                     </div>
-                </div>
-                <div style="float: right;">
-                    <a href="#" class="btn cancel-btn">CANCEL</a>
-                    <a href="#" class="btn save-btn">SAVE</a>
-                </div>
+                    <div style="float: right;">
+                        <a href="#" class="btn cancel-btn">CANCEL</a>
+                        <a href="#" class="btn save-btn">SAVE</a>
+                    </div>
+                </form>
+
             </div>
+
+    </div>
     </div>
     </section>
     <!-- End Content -->

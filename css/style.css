@@ -881,10 +881,10 @@ thead th {
 }
 
 .add-label {
-  margin-top: 10px;
   font-size: 15px;
   font-weight: 500;
   width: 170px;
+  margin-top:10px;
   display: inline-block;
 }
 .add-attractions-label {
@@ -1171,7 +1171,7 @@ thead th {
 
 .banner-label {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 500 !important;
   width: 150px;
   display: inline-block;
 }
@@ -1341,7 +1341,8 @@ label {
 .add-question-modal {
   background-color: #000000a6;
   height: 100%;
-  padding-top: 10%;
+  /* line-height: 100; */
+  padding-top: 150px;
 }
 .model-heading {
   font-weight: 700 !important;
@@ -1972,12 +1973,25 @@ tbody td img {
   color: #fefeff !important;
   border: 2px solid #742cdf !important;
   border-radius: 0 !important;
+  width: 82px !important;
+  margin-right: 15px !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  padding: 7px;
+  background-color: #742cdf;
+  text-decoration: none !important;
+}
+.package-modelbox-add-btn{
+  color: #fefeff !important;
+  border: 2px solid #742cdf !important;
+  border-radius: 0 !important;
   width: 50px !important;
   margin-right: 15px !important;
   font-size: 10px !important;
   font-weight: 600 !important;
   padding: 7px;
   background-color: #742cdf;
+  text-decoration: none !important;
 }
 /* Start add packages, tournament, stadium */
 
@@ -2157,3 +2171,12 @@ color: red;
 }
 
 /* Tournment name End */
+.logout-button{
+  width: 10px !important;
+  background-color: #742cdf !important;
+  color: white !important;
+}
+.logout-button > a{
+text-decoration: none !important;
+
+}
