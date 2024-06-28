@@ -13,7 +13,7 @@ a {
 }
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -115,18 +115,6 @@ td {
   transition: all 0.5s ease;
 }
 
-.mini-logo{
-  display: none;
-}
-.toggled .mini-logo{
-  display: block !important;
-  width: 40px;
-  margin: 25px 10px; 
-  padding: 0; 
-  transition: ease-out;
-  transition-duration: 0.5s;
-}
-
 #wrapper.toggled #sidebar-wrapper {
   width: 250px;
 }
@@ -185,12 +173,12 @@ td {
 .sidebar-nav > li > a:hover,
 .sidebar-nav > li.active > a {
   text-decoration: none;
-  color: #742cdf;
-  background: #fff;
+  color: white;
+  background: #56328bea;
   font-weight: 700;
 }
 .sidebar-nav > li > a i {
-  font-size: 24px;
+  font-size: 18px;
   width: 40px;
 }
 .sidebar-nav > .dashboard-nav-dropdown > a i {
@@ -216,7 +204,7 @@ td {
 #navbar-wrapper {
   width: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 999;
   background-color: #f5f2f8;
   border-bottom: 1px solid #cfcfcf !important;
 }
@@ -475,12 +463,14 @@ td {
   border-radius: 0;
 }
 .nav-pills .nav-link {
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 500;
   background-color: white;
 }
 .nav-pills .nav-link.active {
   background-color: #742cdf !important;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .add-new-button {
   font-size: 12px !important;
@@ -506,13 +496,13 @@ td {
   /* height: 60% !important; */
 }
 .Packages-On-Live-progreesses-scrollbar {
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
-.Packages-On-Live-progreesses-scrollbar::-webkit-scrollbar {
-  width: 7px;
+/* .Packages-On-Live-progreesses-scrollbar::-webkit-scrollbar {
+  width: 0px;
   height: 1px !important;
-}
+} */
 
 .Packages-On-Live-progreesses-scrollbar::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -536,9 +526,76 @@ td {
 .sales-statistics-card {
   height: 100% !important;
 }
-.sales-statistics-body {
-  /* height: 50% !important; */
+
+#salesChart {
+  width: 100% !important;
+  height: 280px !important ;
 }
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px)  {
+  .sales-statistics-card {
+  height: 100% !important;
+}
+
+#salesChart {
+  width: 100% !important;
+  height: 300px !important;
+
+}
+/* Start sales chat tabs */
+ .nav-pills .nav-link {
+  border-radius: 0;
+}
+.nav-pills .nav-link {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  background-color: white;
+}
+.nav-pills .nav-link.active {
+  background-color: #742cdf !important;
+  font-size: 10px !important;
+  font-weight: 500;
+}
+}
+
+ /* Medium devices (tablets, 768px and up)  */
+ @media (max-width: 768px) {
+  .sales-statistics-card {
+  height: 100% !important;
+}
+
+#salesChart {
+  width: 100% !important;
+  height: 200px !important ;
+}
+/* Start sales chat tabs */
+ .nav-pills .nav-link {
+  border-radius: 0;
+}
+.nav-pills .nav-link {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  background-color: white;
+}
+.nav-pills .nav-link.active {
+  background-color: #742cdf !important;
+  font-size: 10px !important;
+  font-weight: 500;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
 /* End Sales-statistics-card */
 
 /* End  Packages-On-Live*/
@@ -546,6 +603,10 @@ td {
 /* Start Dashboard Order-cards */
 .dashboard-Order-Cards {
   height: 85% !important;
+
+}
+.order-table{
+ overflow-x: auto !important;
 }
 /* End Dashboard Order-cards */
 
@@ -645,7 +706,7 @@ table.table-data-scrollbar .tournament-table-body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
- 
+
 }
 /* Hide the browser's default checkbox */
 .checkbox-container input {
@@ -691,8 +752,8 @@ table.table-data-scrollbar .tournament-table-body {
 
 /* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
-  left: 8px;
-  top: 4px;
+  left: 7px;
+  top: 3px;
   width: 5px;
   height: 10px;
   font-weight: 25px !important;
@@ -742,7 +803,7 @@ table.table-data-scrollbar .tournament-table-body {
   border: none;
 }
 ::-webkit-scrollbar-thumb {
-  background: #742CDF; 
+  background: #742CDF;
   border-radius: 10px;
 } */
 .content-body::-webkit-scrollbar {
@@ -861,8 +922,8 @@ thead th {
 }
 
 .team-table-body tbody td {
-  padding: 0 15px;
-  text-align: left;
+  /* padding: 0 15px; */
+  /* text-align: left; */
 }
 
 .team-table-body tbody td img {
@@ -1024,7 +1085,7 @@ thead th {
   font-weight: 700 !important;
 }
 
-.hotel-rating-column {
+/* .hotel-rating-column {
   width: 12%;
 }
 
@@ -1045,12 +1106,12 @@ thead th {
 }
 .hotel-action-column {
   width: 13%;
-}
+}*/
 
 .hotel-rating-column i {
   font-size: 13px;
   color: #742cdf;
-}
+} 
 .hotel-facilities-icons {
   font-size: 23px;
   width: 30px;
@@ -1062,7 +1123,7 @@ thead th {
 }
 
 /* Flights Style */
-.flight-table-airlines-column {
+/* .flight-table-airlines-column {
   width: 20%;
   font-weight: 600;
 }
@@ -1094,7 +1155,7 @@ thead th {
 .hotel-database-column .checkmark {
   left: 30px;
   top: 0 !important;
-}
+} */
 .table-col1-fw {
   font-weight: 600;
 }
@@ -1512,7 +1573,7 @@ thead th {
   color: #5c5e62;
 }
 
-.transport-column {
+/* .transport-column {
   width: 15%;
 }
 
@@ -1538,7 +1599,7 @@ thead th {
 
 .actions-column {
   width: 15%;
-}
+} */
 
 /* intercity */
 
@@ -1690,14 +1751,64 @@ tbody td img {
   height: auto;
 }
 
+
 .team-table-body td a i {
+  width: 30px;
+  height: 30px;
+  border-radius:5px  ;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 13px;
   margin: 0 5px;
-  color: #5c5e62;
+  color:#742cdf;
+  background-color: #e1d5f1;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
+
+}
+.team-table-body td a i:hover {
+  width: 30px;
+  height: 30px;
+  border-radius:5px  ;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0 5px;
+  color:white;
+  background-color: #742cdf;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
+
+}
+.action-btn {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius:5px  ;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0 5px;
+  color:#742cdf;
+  background-color: #e1d5f1;
+  text-align: center;
+  justify-content: center;
+  padding: 8px;
+}
+.action-btn:hover{
+ width: 30px !important;
+  height: 30px !important;
+  border-radius:5px  ;
+  cursor: pointer;
+   font-size: 15px;
+  margin: 0 5px;
+  color:white;
+  background-color: #742cdf;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
+
 }
 
-.transport-column {
+/* .transport-column {
   width: 15%;
 }
 
@@ -1723,7 +1834,7 @@ tbody td img {
 
 .actions-column {
   width: 15%;
-}
+} */
 
 /* Intercity  End */
 
@@ -2012,11 +2123,12 @@ tbody td img {
   max-height: 400px;
   /* Adjust as needed */
   overflow-y: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
   background-color: #fff;
   position: relative;
-  /* padding: 0px; */
+  padding-top: 10px;
+  margin: 5px;
 }
 
 .tournament-level-table {
@@ -2035,7 +2147,7 @@ tbody td img {
 }
 .table-header,
 .table-data-elements td {
-  padding: 8px 12px;
+  padding: 20px 12px !important;
   text-align: left;
   font-weight: 500 !important;
 }
@@ -2050,10 +2162,7 @@ tbody td img {
   /* padding: 0px; */
   border-bottom: 2px solid #dbd8d8;
 }
-#salesChart {
-  width: 100% !important;
-  height: 280px !important ;
-}
+
 .input-checkin {
   border: 1px solid #a7a7a7fa;
   width: 150px !important;
@@ -2190,31 +2299,193 @@ color: red;
 }
 .logout-button > a{
 text-decoration: none !important;
+
+}
+.edit-file-icon{
+  color: #742cdf !important;
+  /* background-color: #aa7af1 !important; */
+}
+/* Start Profile details */
+.avatar.avatar-sm {
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  font-size: 0.65rem;
+}
+.avatar.avatar-rounded {
+  border-radius: 50%;
+}
+.avatar {
+  position: relative;
+  height: 2.700rem;
+  width: 2.700rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.main-header-dropdown {
+  border: 1px #eaeaea solid !important;
+  border: 50px;
+}
+
+.main-header-container .main-header-dropdown {
+  box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+  inset-block-start: 0.875rem !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.header-profile-dropdown {
+  min-width: 11rem !important;
+}
+
+.profile-icon {
+  border-bottom: 1px #f3f3f3 solid;
+  margin-bottom: 5px;
+}
+
+.profile-icon:hover,
+.profile-icon:hover a {
+  color: #dc1f26 !important;
+}
+
+.main-header-dropdown li a .text-secondary {
+  color: rgb(215, 124, 247) !important;
+}
+
+.main-header-dropdown li a .text-success {
+  color: rgb(12, 215, 177) !important;
+  opacity: 1;
 }
 
 
-.filter-column-left{
+/* End profile details */
 
+.mini-logo{
+  display: none;
 }
-.filter-column-right{
-  display: flex;
-  justify-content: end;
-}
-@media (max-width: 992px){
-  .filter-column-left{
-    margin-bottom: 20px;
-  }
-  .filter-column-right{
-    justify-content: space-between;
-  }
+.toggled .mini-logo{
+  display: block !important;
+  width: 40px;
+  margin: 25px 10px;
+  padding: 0;
+  transition: ease-out;
+  transition-duration: 0.5s;
 }
 
-
-
-
+/* Start Pie chats */
 .chart-container {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 62px;
+  height: 62px;
   align-items: end;
 }
+.chart-container::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 600;
+}
+.doughnut1::before{
+  content: "64%";
+}
+.doughnut2::before{
+  content: "74%";
+}
+.doughnut3::before{
+  content: "80%";
+}
+.doughnut4::before{
+  content: "88%";
+}
+.doughnut5::before{
+  content: "64%";
+}
+.doughnut6::before{
+  content: "20%";
+}
+
+#mainHeaderProfile{
+  text-decoration: none !important;
+}
+
+#myChart{
+  width: 100% !important;
+}
+
+ .sales-tabs-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            /* margin-bottom: 20px; */
+        }
+
+        .sales-statistics-tabs {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .sales-tabs  {
+           font-size: 15px;
+           font-weight: 500;
+           color:#742cdf;
+           /* background-color:#742cdf ; */
+           width: 90px;
+           text-align: center;
+           /* border: 2px solid #000; */
+           margin:2px ;
+           padding: 2px;
+        }
+
+        .sales-tabs:hover {
+            background-color: #742cdf !important;
+            color: white;
+        }
+         .sales-tabs.active {
+            background-color: #742cdf !important;
+            color: white;
+        } 
+
+        .legend {
+          width:100%;
+            /* display: flex; */
+            /* align-items:end; */
+        }
+
+        .legend-item {
+            /* display: flex;
+            align-items: center; */
+            /* margin-right: 15px; */
+            width: 25%;
+            font-size: 12px;
+            font-weight: 600;
+            /* border: 2px solid #000; */
+        }
+
+        .legend-color {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            
+        }
+
+        .legend-direct-booking {
+            background-color:#6200ea;
+        }
+
+        .legend-package {
+            background-color: magenta;
+        }
