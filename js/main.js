@@ -30,16 +30,16 @@ $(document).ready(function () {
 /* tabs JS */
 function openhotel(evt, hotelName) {
     var i, x, tablinks;
-    x = document.getElementsByClassName("hoteltab");
+    x = document.getElementsByClassName("table-data-tabs");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("hotel-tab-inactive");
+    tablinks = document.getElementsByClassName("table-data-tabs-inactive");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" hotel-tab-active", "");
+        tablinks[i].className = tablinks[i].className.replace(" table-data-tabs-active", "");
     }
     document.getElementById(hotelName).style.display = "block";
-    evt.currentTarget.className += " hotel-tab-active";
+    evt.currentTarget.className += " table-data-tabs-active";
 }
 /* tabs JS */
 

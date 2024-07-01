@@ -824,19 +824,19 @@ table.table-data-scrollbar .tournament-table-body {
 .content-body::-webkit-scrollbar-thumb:hover {
   background: #742cdf;
 }
-.team-table-body::-webkit-scrollbar {
+.table-body-scrollbar::-webkit-scrollbar {
   width: 7px;
   height: 1px !important;
 }
-.team-table-body::-webkit-scrollbar-track {
+.table-body-scrollbar::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 15px !important;
 }
-.team-table-body::-webkit-scrollbar-thumb {
+.table-body-scrollbar::-webkit-scrollbar-thumb {
   background: #742cdf;
   border-radius: 15px !important;
 }
-.team-table-body::-webkit-scrollbar-thumb:hover {
+.table-body-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #742cdf;
 }
 
@@ -915,23 +915,16 @@ thead th {
   font-size: 13px;
   font-weight: 600;
 }
-
-.team-table-body {
+.table-body-scrollbar {
   max-height: 500px; /* Adjust this value as needed */
   overflow-y: scroll;
 }
-
-.team-table-body tbody td {
-  /* padding: 0 15px; */
-  /* text-align: left; */
-}
-
-.team-table-body tbody td img {
+.table-body-scrollbar tbody td img {
   width: 60px;
   height: auto;
 }
 
-.team-table-body td a i {
+.table-body-scrollbar td a i {
   cursor: pointer;
   font-size: 1.2em;
   margin: 0 5px;
@@ -1062,18 +1055,18 @@ thead th {
 .hotel-tabs {
   margin: 20px 5px;
 }
-.hotel-tab-inactive {
-  background-color: #ffffff;
-  color: #b3b8bd;
-  margin: -2px;
-  font-size: 14px;
+.table-data-tabs-inactive {
+  background-color: #ffffff !important;
+  color: #b3b8bd !important;
+  margin: 0px !important;
+  font-size: 14px !important;
   border-radius: 0px !important;
 
   /* width: 150px; */
 }
-.hotel-tab-active {
-  background-color: #742cdf;
-  color: #ffffff;
+.table-data-tabs-active {
+  background-color: #742cdf !important;
+  color: #ffffff !important;
   /* width: 150px; */
 }
 .by-narriot-text {
@@ -1561,12 +1554,12 @@ thead th {
   font-weight: 600;
 }
 
-.team-table-body {
+.table-body-scrollbar {
   max-height: 500px;
   overflow-y: scroll;
 }
 
-.team-table-body td a i {
+.table-body-scrollbar td a i {
   cursor: pointer;
   font-size: 1.2em;
   margin: 0 5px;
@@ -1736,7 +1729,7 @@ thead th {
   font-weight: 600;
 }
 
-.team-table-body {
+.table-body-scrollbar {
   max-height: 500px;
   overflow-y: scroll;
 }
@@ -1752,7 +1745,7 @@ tbody td img {
 }
 
 
-.team-table-body td a i {
+.table-body-scrollbar td a i {
   width: 30px;
   height: 30px;
   border-radius:5px  ;
@@ -1766,7 +1759,7 @@ tbody td img {
   padding-top: 8px;
 
 }
-.team-table-body td a i:hover {
+.table-body-scrollbar td a i:hover {
   width: 30px;
   height: 30px;
   border-radius:5px  ;
@@ -1807,39 +1800,6 @@ tbody td img {
   padding-top: 8px;
 
 }
-
-/* .transport-column {
-  width: 15%;
-}
-
-.name-column {
-  width: 15%;
-}
-
-.depature-column {
-  width: 15%;
-}
-
-.destination-column {
-  width: 15%;
-}
-
-.depature-time-column {
-  width: 15%;
-}
-
-.arrival-column {
-  width: 15%;
-}
-
-.actions-column {
-  width: 15%;
-} */
-
-/* Intercity  End */
-
-/* Add New tour */
-
 .add-label {
   font-size: 15px;
   font-weight: 500;
@@ -2118,7 +2078,7 @@ tbody td img {
 }
 /* Start add packages, tournament, stadium */
 
-.tournament-level-data {
+.dashbord-table-data-scrollbar {
   /* width: 100%; */
   max-height: 400px;
   /* Adjust as needed */
@@ -2131,7 +2091,7 @@ tbody td img {
   margin: 5px;
 }
 
-.tournament-level-table {
+.data-table-header-collapse {
   width: 100%;
   border-collapse: collapse;
   background-color: white;
